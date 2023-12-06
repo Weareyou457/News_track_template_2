@@ -25,7 +25,7 @@ function Article({ agencyDetails }) {
     try {
       const promises = categories.map((category) =>
         axios.get(
-          `http://174.138.101.222:8080/${agencyDetails._id}/get-Postnews/${category}`
+          `http://174.138.101.222:7000/${agencyDetails._id}/get-Postnews/${category}`
         )
       );
 

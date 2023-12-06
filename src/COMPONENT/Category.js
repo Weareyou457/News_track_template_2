@@ -25,7 +25,7 @@ function Category() {
     const getData = async () => {
         try {
             let response = await axios.get(
-                `http://174.138.101.222:8080/${agencyDetails._id}/get-Postnews/${category}`
+                `http://localhost:5000/${agencyDetails._id}/get-Postnews/${category}`
             );
             console.log("Category API Called");
             setData(response.data.data);
